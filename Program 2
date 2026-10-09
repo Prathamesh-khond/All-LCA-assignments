@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+
+int main()
+{
+    int n, sum = 0, i;
+
+    printf("Enter n to calculate the sum of first n numbers: ");
+    scanf("%d", &n);
+
+    i = 1;
+    while (i <= n) {
+        sum = sum + i;
+        i++;
+    }
+
+    printf("Sum = %d\n", sum);
+
+    return 0;
+}
