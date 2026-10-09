@@ -1,0 +1,30 @@
+
+#include <stdio.h>
+
+
+int main()
+{
+    int choice;
+
+    do {
+        printf("Enter a choice:\n1) Print greetings from PK\n2) Exit\nYour choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                printf("Greetings from PK!\n");
+                break;
+
+            case 2:
+                printf("Exiting...\n");
+                break;
+
+            default:
+                printf("Invalid choice!\n");
+        }
+
+    } while (choice != 2);
+
+    return 0;
+}
+
